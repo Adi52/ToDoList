@@ -45,6 +45,7 @@ body {
     position: absolute;
     width: 50%;
     min-width: 300px;
+    max-width: 600px;
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
