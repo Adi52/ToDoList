@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    overflow: hidden;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #a8c9a8;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #a8c9a8;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #a8c9a8;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #a8c9a8;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    left: 9px;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 18px;
+    font-size: 50px;
+}
+
+.panel {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    width: 50%;
+    min-width: 300px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel button {
+    outline: none;
+}
+
+.panel .inputs {
+    width: 100%;
+}
+
+.panel .inputs form {
+    position: relative;
+}
+
+.panel .inputs input[type="text"] {
+    width: 100%;
+    padding: 12px 50px 12px 48px;
+    border: none;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.panel .inputs input[type="text"]:focus {
+    outline: none;
+}
+
+
+.panel .inputs .addTask button {
+    position: absolute;
+    font-size: 20px;
+    color: #1b8db4;
+    background-color: white;
+    border: none;
+    /*padding: 0 15px;*/
+    right: 12px;
+    top: calc(39px/2 - 10px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.panel .inputs .addTask button i.active {
+    transform: rotate(500deg);
+    transition: 1s;
+}
+
+.panel .inputs .addTask button:hover {
+    color: #166d89;
+
+}
+
+.addTask .fas.fa-sticky-note,
+.search .fas.fa-search {
+    color: #1b8db4;
+    position: absolute;
+    font-size: 20px;
+    top: calc(39px/2 - 10px);
+    padding: 0 15px;
+}
+
+.panel button:hover {
+    cursor: pointer;
+}
+
+.info {
+    margin-bottom: 6px;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    color: #16627d;
+}
+
+
+.info h1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+}
+
+.info h3 {
+    position: absolute;
+    bottom: 16px;
+    left: 15px;
+    font-size: 15px;
+}
+
+.info h2 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+.info button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #1b8db4;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+
+.info button:hover {
+    background-color: #16627d;
+}
+
+.tasks ul {
+    list-style-type: none;
+}
+
+.tasks li {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    padding: 12px 0 12px 0;
+    position: relative;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.tasks li.show {
+    opacity: 1;
+}
+
+.tasks li:nth-child(1) {
+    border-radius: 2px 2px 0 0;
+}
+
+.tasks li:last-child {
+    border-radius: 0 0 2px 2px;
+}
+
+.tasks li:only-child {
+    border-radius: 2px;
+}
+
+.tasks .fas.fa-check,
+.tasks .fas.fa-check-double {
+    margin-left: 15px;
+    color: #e3e3e3;
+    font-size: 20px;
+}
+
+.tasks .fas.fa-check:hover {
+    cursor: pointer;
+    color: #cdcdcd;
+}
+
+.fas.fa-check.fa-check-double.grayText {
+    color: #1b8db4;
+}
+
+.fas.fa-check.fa-check-double.grayText:hover {
+    color: #166d89;
+}
+
+.task .titleTask {
+    border-width: 0 0 2px;
+    border-color: transparent;
+    background-color: white;
+    margin-left: 8px;
+    font-family: 'Work Sans', sans-serif;
+    width: 60%;
+    transition: .3s;
+}
+
+.task .titleTask.checked {
+    text-decoration: line-through;
+    color: #cdcdcd;
+}
+
+.task .titleTask:focus {
+    outline: 0;
+    border-color: #cdcdcd;
+    transition: .3s;
+}
+
+.task button,
+.task .hour {
+    border: none;
+    background-color: white;
+    color: #cdcdcd;
+    font-size: 20px;
+}
+
+.task .delete i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e3e3e3;
+}
+
+.task .delete i:hover {
+    color: #d72a2a;
+}
+
+.task .edit i {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e3e3e3;
+}
+
+.task .edit .fas.fa-edit.active {
+    color: #1b8db4;
+}
+
+.task .edit i:hover {
+    color: #cdcdcd;
+}
+
+.task .hour {
+    position: absolute;
+    font-size: 14px;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.task .titleTask {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel .emptyList {
+    margin-top: 10px;
+    text-align: center;
+    color: #e3e3e3;
+    padding-top: 20px;
+    transition: 1s;
+    border-top: 1px solid transparent;
+    border-bottom-width:0;
+    border-left-width:0;
+    border-right-width:0;
+    border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(245,245,245,1) 20%, rgba(227,227,227,1) 50%, rgba(237,237,237,1) 80%, rgba(255,255,255,0) 100%) 1;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 class="logo"> TODO LIST</h1>
+
+<div class="panel">
+    <div class="info">
+        <h1 class="actualDate"></h1>
+        <h3 class="actualDay"></h3>
+        <h2><span>0</span> Tasks</h2>
+        <button class="clear">clear all</button>
+    </div>
+
+    <div class="inputs">
+        <form action="" class="addTask">
+            <i class="fas fa-sticky-note"></i>
+            <input type="text" placeholder="Enter your tasks">
+            <button><i class="fas fa-plus"></i></button>
+        </form>
+        <form action="" class="search" onSubmit="return false;">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search tasks">
+        </form>
+    </div>
+
+
+    <div class="tasks">
+        <ul></ul>
+    </div>
+    <span class="emptyList">Task list empty</span>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
