@@ -1,12 +1,12 @@
 # To do list
-> This is a simple todo-list made with pure JavaScript.
+> It is a simple todo-list made with pure JavaScript.
 
 
 
 ## General info
 
-> This is my first standalone project made in pure javascript, html and css. Thanks to him, I understood many important concepts and used them in practice.
-The motivation for doing it was from the Samurai Programming course on Udemy. In the future, I am planning to extend it with a backend (Django).
+> This is my first standalone project made in pure javascript, html and css. Thanks to it, I understood many important concepts and used them in practice.
+In the future, I am planning to extend it with a backend (Django).
 
 ## Live version
 > https://adi52.github.io/to_do_list/
