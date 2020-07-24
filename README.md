@@ -1,5 +1,5 @@
 # To do list
-> It is a simple todo-list made with pure JavaScript.
+> It is a simple todo-list made with JavaScript.
 
 
 
