@@ -251,6 +251,7 @@ body {
     position: absolute;
     right: 12px;
     top: 50%;
+    transform: translateY(-50%);
     color: #e3e3e3;
 }
 
