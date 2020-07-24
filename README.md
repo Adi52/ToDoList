@@ -12,7 +12,7 @@ The motivation for doing it was from the Samurai Programming course on Udemy. In
 > https://adi52.github.io/to_do_list/
 
 ## Screenshots
-![todo-app](http://g.recordit.co/T7fqGFylc4.gif)
+![todo-app](http://g.recordit.co/4cjvqvQ4vY.gif)
 
 
 ## Technologies
