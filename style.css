@@ -14,18 +14,16 @@ body {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #a8c9a8;
+    color: #bfbfbf;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: #a8c9a8;
-
+    color: #bfbfbf;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: #a8c9a8;
-
+    color: #bfbfbf;
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: #a8c9a8;
+    color: #bfbfbf;
 }
 
 .logo {
