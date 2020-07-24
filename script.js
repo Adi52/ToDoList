@@ -73,7 +73,7 @@ const addTask = (e) => {
     const titleTask = input.value;
     input.value = '';
     if (titleTask === '') return;
-    if (document.querySelector('.panel').clientHeight > 0.7 * document.querySelector('body').clientHeight) {
+    if (document.querySelector('.panel').clientHeight > 0.7 * window.clientHeight) {
         alert('No more tasks can be added!\n' +
             'Delete previous in order to add a new one!');
         return;
