@@ -20,7 +20,7 @@ const weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturd
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
     'November', 'December']
 
-dateH1.textContent = `${weekday[d.getDay()]}, ${day}th`
+dateH1.textContent = `${weekday[d.getDay() - 1]}, ${day}th`
 dayH3.textContent = months[d.getMonth()];
 
 

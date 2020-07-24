@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -10,7 +11,6 @@ body {
     background-color: #08AEEA;
     background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
     overflow: hidden;
-
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -30,22 +30,21 @@ body {
 
 .logo {
     position: absolute;
-    width: 100%;
     text-align: center;
+    white-space: nowrap;
     top: 10%;
-    left: 9px;
+    left: 50%;
+    transform: translateX(calc(-50% + 8px));
     color: white;
     font-family: 'Sora', sans-serif;
-    letter-spacing: 18px;
-    font-size: 50px;
+    letter-spacing: 16px;
+    font-size: 26px;
 }
 
 .panel {
     font-family: 'Work Sans', sans-serif;
     position: absolute;
-    width: 50%;
-    min-width: 300px;
-    max-width: 600px;
+    width: 95%;
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
@@ -57,6 +56,58 @@ body {
 .panel button {
     outline: none;
 }
+
+.info {
+    margin-bottom: 6px;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    color: #16627d;
+}
+
+
+.info h1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+}
+
+.info h3 {
+    position: absolute;
+    bottom: 16px;
+    left: 15px;
+    font-size: 15px;
+}
+
+.info h2 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+.info button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #1b8db4;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+
+.info button:hover {
+    background-color: #16627d;
+}
+
 
 .panel .inputs {
     width: 100%;
@@ -115,57 +166,6 @@ body {
 
 .panel button:hover {
     cursor: pointer;
-}
-
-.info {
-    margin-bottom: 6px;
-    width: 100%;
-    height: 90px;
-    background-color: #fff;
-    border-radius: 2px;
-    position: relative;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-    color: #16627d;
-}
-
-
-.info h1 {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 20px;
-}
-
-.info h3 {
-    position: absolute;
-    bottom: 16px;
-    left: 15px;
-    font-size: 15px;
-}
-
-.info h2 {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 20px;
-}
-
-.info button {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    font-family: 'Work Sans', sans-serif;
-    background-color: #1b8db4;
-    color: white;
-    border-radius: 2px;
-    padding: 2px 4px;
-}
-
-.info button:hover {
-    background-color: #16627d;
 }
 
 .tasks ul {
@@ -251,7 +251,6 @@ body {
     position: absolute;
     right: 12px;
     top: 50%;
-    transform: translateY(-50%);
     color: #e3e3e3;
 }
 
@@ -300,5 +299,27 @@ body {
     border-left-width:0;
     border-right-width:0;
     border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(245,245,245,1) 20%, rgba(227,227,227,1) 50%, rgba(237,237,237,1) 80%, rgba(255,255,255,0) 100%) 1;
+}
+
+@media (max-width: 300px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .logo {
+        letter-spacing: 18px;
+        transform: translateX(calc(-50% + 9px));
+        font-size: 50px;
+    }
+
+    .panel {
+        width: 50%;
+        min-width: 480px;
+        max-width: 600px;
+        transform: translateX(-50%);
+        top: 25%;
+    }
 }
 
