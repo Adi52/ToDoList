@@ -9,7 +9,7 @@
 In the future, I am planning to extend it with a backend (Django).
 
 ## Live version
-> https://adi52.github.io/to_do_list/
+> https://adi52.github.io/to-do-list/
 
 ## Screenshots
 ![todo-app](http://g.recordit.co/4cjvqvQ4vY.gif)
