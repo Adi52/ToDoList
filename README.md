@@ -12,7 +12,10 @@ In the future, I am planning to extend it with a backend (Django).
 > https://adi52.github.io/to-do-list/
 
 ## Screenshots
-![todo-app](http://g.recordit.co/4cjvqvQ4vY.gif)
+
+<p align="center">
+  <img src="http://g.recordit.co/4cjvqvQ4vY.gif">
+</p>
 
 
 ## Technologies
